@@ -1,0 +1,31 @@
+strict digraph {
+	graph [rankdir=BT]
+	start -> room2
+	room2 -> start
+	room2 -> room3
+	room2 -> room4
+	room2 -> room5
+	room3 -> room2
+	room4 -> room2
+	room4 -> room6
+	room5 -> room7
+	room5 -> room6
+	room5 -> room2
+	room6 -> room5
+	room6 -> room4
+	room7 -> end
+	room7 -> room8
+	room7 -> room9
+	room8 -> room7
+	room8 -> room10
+	room9 -> room7
+	room9 -> room12
+	room9 -> room10
+	room10 -> room8
+	room10 -> room9
+	room10 -> room11
+	room11 -> room10
+	room12 -> room9
+	end [fillcolor=green style=filled]
+	start [fillcolor=grey style=filled]
+}
